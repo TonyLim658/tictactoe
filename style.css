@@ -1,11 +1,13 @@
-#board { grid-area: main; }
-#info { grid-area: right; }
-
 #main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+}
+
+#board {
+    grid-area: main;
+    width: 70%;
 }
 
 /* 
@@ -39,7 +41,7 @@
     height: 32%;
 }
 
-.grid-item button{
+.grid-item button {
     border: transparent;
     background: transparent;
     width: 50px;
@@ -54,5 +56,22 @@
     height: 200px;
 }
 
+#info {
+    padding-left: 3em;
+    text-align: center;
+    grid-area: right;
+    width: 30%;
+}
+
+
+.player_container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .arrow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4%;
+    height: 4%;
 }
