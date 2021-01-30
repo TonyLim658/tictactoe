@@ -28,7 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #2196F3;
+    background-color: black;
     gap: 12px;
 }
 

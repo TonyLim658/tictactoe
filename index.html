@@ -6,6 +6,7 @@
           content="Web site created using create-react-app"
         />
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="functions.js"></script>
     </head>
 
     <body>
@@ -22,21 +23,22 @@
                     <div class="grid-item">8</div>
                     <div class="grid-item">9</div>   -->
 
-                    <div class="grid-item"><img src="images/circle.png" alt="circle"></div>
-                    <div class="grid-item"><img src="images/empty.png" alt="empty"></div>
-                    <div class="grid-item"><img src="images/empty.png" alt="empty"></div>  
-                    <div class="grid-item"><img src="images/circle.png" alt="circle"></div>
-                    <div class="grid-item"><img src="images/cross.png" alt="cross"></div>
-                    <div class="grid-item"><img src="images/empty.png" alt="empty"></div>  
-                    <div class="grid-item"><img src="images/empty.png" alt="empty"></div>
-                    <div class="grid-item"><img src="images/empty.png" alt="empty"></div>
-                    <div class="grid-item"><img src="images/empty.png" alt="empty"></div>  
+                    <div class="grid-item" onclick="player_play(0,0)"><img src="images/empty.png" alt="empty" id="item_0_0"></div>
+                    <div class="grid-item" onclick="player_play(1,0)"><img src="images/empty.png" alt="empty" id="item_1_0"></div>
+                    <div class="grid-item" onclick="player_play(2,0)"><img src="images/empty.png" alt="empty" id="item_2_0"></div>
+                    <div class="grid-item" onclick="player_play(0,1)"><img src="images/empty.png" alt="empty" id="item_0_1"></div>
+                    <div class="grid-item" onclick="player_play(1,1)"><img src="images/empty.png" alt="empty" id="item_1_1"></div>
+                    <div class="grid-item" onclick="player_play(2,1)"><img src="images/empty.png" alt="empty" id="item_2_1"></div>  
+                    <div class="grid-item" onclick="player_play(0,2)"><img src="images/empty.png" alt="empty" id="item_0_2"></div>
+                    <div class="grid-item" onclick="player_play(1,2)"><img src="images/empty.png" alt="empty" id="item_1_2"></div>
+                    <div class="grid-item" onclick="player_play(2,2)"><img src="images/empty.png" alt="empty" id="item_2_2"></div>  
                 </div>
             </div>
             <div id="info">
                 <h1>TIMER</h1>
                 <br>
-                <img src="images/arrow.png" alt="arrow" class="arrow"><h1>Player 1</h1>
+                <!-- <img src="images/arrow.png" alt="arrow" class="arrow"> -->
+                <h1>Player 1</h1>
                 <h1>Player 2</h1>
             </div>
         </div>
