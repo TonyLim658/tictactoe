@@ -1,8 +1,14 @@
+#board { grid-area: main; }
+#info { grid-area: right; }
 
 #main {
-    width: 900px;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
 }
+
+/* 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -15,11 +21,38 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
-}
-.grid-item img{
-    align-content: center;
-    border-radius: 2em;
+} 
+*/
+
+.grid-container {
     display: flex;
-    width: 120px;
-    height: 120px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #2196F3;
+    gap: 12px;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 32%;
+    height: 32%;
+}
+
+.grid-item button{
+    border: transparent;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+}
+
+.grid-item img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.arrow {
 }
