@@ -32,7 +32,6 @@ function playerPlay(x, y) {
             winner = CIRCLE_ITEM;
             scoreOne += 1
             document.getElementById("score_1").innerHTML=scoreOne;
-            alert("WIN CIRCLE");
             reset();
         }
         turn = CROSS_ITEM;
@@ -45,7 +44,6 @@ function playerPlay(x, y) {
             winner = CROSS_ITEM;
             scoreTwo += 1
             document.getElementById("score_2").innerHTML=scoreTwo;
-            alert("WIN CROSS");
             reset();
         }
         turn = CIRCLE_ITEM;
@@ -82,7 +80,7 @@ function reset() {
 
 function timer() {
     // Set the date we're counting down to
-    var countDownDate = new Date(new Date().getTime() + 1*60000);;
+    var countDownDate = new Date(new Date().getTime() + 3*60000);;
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -98,7 +96,7 @@ function timer() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     var totalSeconds = Math.floor(distance / 1000) + 1
     console.log(totalSeconds);
-    progress = (totalSeconds / 60)*100
+    progress = (totalSeconds / 180)*100
     console.log(progress);
     update_progress_bar(progress)
         
